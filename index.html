@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./style/index.css">
+        <script src="./js/theme-selector.js"></script>
+        <link id="themeFile" rel="stylesheet" href="./style/themes/original.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css"/>
+        <link rel="stylesheet" href="./style/sumoselect.css">
+        <link rel="stylesheet"
+              href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+        <!--            <script src="https://basecamp.transperfect.com/js/klokantech-maptiler-custom.js"></script>-->
+        <link rel="stylesheet" href="./style/phoca-flags/flag-icon.css">
+        <!--<script src="https://code.jquery.com/jquery-3.4.1.js"-->
+        <!--        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>-->
+    </head>
+    <body id="hi">
+        <div id="uiContainer">
+            <div id="sideDash">
+                <div class="loaderOverlay">
+                    <div class="loader">loading...</div>
+                </div>
+                <div class="dashSettings">
+                    <div id="pac-container">
+                        <div class="inputContain">
+                            <div class="inputBlurOut"></div>
+                            <input id="pac-input" type="text" placeholder="Find an Office">
+                        </div>
+                        <button id="submitBtn">
+                            <svg id="searchIcon" class="enabled" viewBox="0 0 24 24" class="valign-middle icon___35gdr"
+                                 preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false"
+                                 style="width: 24px; height: 24px; overflow: visible;">
+                                <path d="M15.447 15.043c-1.36 1.435-3.246 2.263-5.27 2.263-3.994 0-7.23-3.216-7.23-7.18 0-3.965 3.236-7.18 7.23-7.18 3.996 0 7.233 3.215 7.233 7.18 0 .47-.046.935-.136 1.39-.084.426.193.84.62.924.425.084.838-.193.922-.62.11-.555.166-1.122.166-1.695 0-4.835-3.943-8.752-8.804-8.752-4.86 0-8.804 3.918-8.804 8.752 0 4.835 3.943 8.753 8.804 8.753 2.46 0 4.758-1.01 6.41-2.754.3-.315.285-.813-.03-1.11-.315-.3-.812-.286-1.11.03zm1.307 2.725l4.506 4.477c.308.306.806.304 1.112-.004.306-.305.304-.802-.004-1.11l-4.506-4.476c-.308-.305-.805-.304-1.11.004-.307.308-.306.806.002 1.112z"></path>
+                            </svg>
+                            <svg id="closeSearchIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+                <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717    L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859    c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287    l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285    L284.286,256.002z"/>
+        </svg>
+                        </button>
+                        <button id="filterBtn" href="#filterModal">
+                            <span style="display:inline;">Filter</span>
+                            <div class="fContain" style="display:inline;">
+                                <span id="filterBadge"></span>
+                                <svg id="filterIcon" xmlns="http://www.w3.org/2000/svg"
+                                     class="valign-middle icon___35gdr" aria-hidden="true" style=""
+                                     viewBox="0 0 50 50" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                    <path d="M 25 2 C 12.318 2 2 12.318 2 25 s 10.318 23 23 23 s 23 -10.318 23 -23 S 37.682 2 25 2 Z M 33 35 H 17 c -0.552 0 -1 -0.448 -1 -1 s 0.448 -1 1 -1 h 16 c 0.552 0 1 0.448 1 1 S 33.552 35 33 35 Z M 35 27 H 15 c -0.552 0 -1 -0.448 -1 -1 s 0.448 -1 1 -1 h 20 c 0.552 0 1 0.448 1 1 S 35.552 27 35 27 Z M 38 19 H 12 c -0.552 0 -1 -0.448 -1 -1 s 0.448 -1 1 -1 h 26 c 0.552 0 1 0.448 1 1 S 38.552 19 38 19 Z"/>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="items">
+                    <!-- locations appended here via js -->
+                </div>
+                <!--DEMO01 MODAL-->
+                <div id="filterModal">
+                    <div id="filterModalHeader">
+                        <h2 style="">Filters</h2>
+                        <button id="removeFiltersBtn">Clear All</button>
+                        <div class="close-filterModal">
+                            <br>
+                            <!--<img class="closebt" src="https://joaopereirawd.github.io/animatedModal.js/img/closebt.svg">-->
+                            <i class="closebt fa fa-close">
+                                <div class="hoverCircle"></div>
+                            </i>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="modal-content">
+                        <div id="filterContiner">
+                            <div class="selectContain">
+                                <div>
+                                    <span class="filterLabel">Countries</span>
+                                </div>
+                                <select multiple="multiple" id="countries">
+                                    <!-- list gernerated from data provided -->
+                                </select>
+                            </div>
+                            <!--<div class="selectContain">
+                                <div>
+                                    <span class="filterLabel">Languages</span>
+                                </div>
+                                <select multiple="multiple" id="languages">
+                                    <option value="ar">Arabic</option>
+                                    <option value="zhCN">Chinese (Simplified)</option>
+                                    <option value="zhTW">Chinese (Traditional)</option>
+                                    <option value="frCA">French (CA)</option>
+                                    <option value="he">Hebrew</option>
+                                    <option value="ja">Japanese</option>
+                                    <option value="ko">Korean</option>
+                                    <option value="ru">Russian</option>
+                                    <option value="es">Spanish</option>
+                                    <option value="en">All (Non-English)</option>
+                                </select>
+                            </div>-->
+                        </div>
+                    </div>
+                    <button class="" id="filterSubmit">Apply</button>
+                </div>
+            </div>
+            <div id="mapContainer">
+                <div id="map"></div>
+                <div class="loaderOverlay">
+                    <div class="box">
+                        <div class="loader-11"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="./js/xmlToJson.js"></script>
+        <script src="./js/animatedModalCustom.js"></script>
+        <script src="./js/jquery.sumoselect.js"></script>
+        <!--      <script src="/script/markerclusterer.js"></script>-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.entries%2CObject.entries%2CURLSearchParams%2CURL"></script>
+        <script src="https://cdn.klokantech.com/maptilerlayer/v1/index.js"></script>
+        <script src="index.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDP8Jg8Er3yeeN7_CKjITB8yVuWDB3-cS8&callback=initMap&libraries=places"
+                async defer></script>
+    </body>
+</html>
+
+
+

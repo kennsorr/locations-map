@@ -1,0 +1,188 @@
+/*Gotham not included on mac by default*/
+@font-face {
+    font-family: 'GothamBook';
+    src: url('https://basecamp.transperfect.com/fonts/GothamBook.eot');
+    src: url('https://basecamp.transperfect.com/fonts/GothamBook.eot') format('embedded-opentype'),
+    url('https://basecamp.transperfect.com/fonts/GothamBook.woff2') format('woff2'),
+    url('https://basecamp.transperfect.com/fonts/GothamBook.woff') format('woff'),
+    url('https://basecamp.transperfect.com/fonts/GothamBook.ttf') format('truetype'),
+    url('https://basecamp.transperfect.com/fonts/GothamBook.svg#GothamBook') format('svg');
+}
+@font-face {
+    font-family: 'GothamLight';
+    src: url('https://basecamp.transperfect.com/fonts/GothamLight.eot');
+    src: url('https://basecamp.transperfect.com/fonts/GothamLight.eot') format('embedded-opentype'),
+    url('https://basecamp.transperfect.com/fonts/GothamLight.woff2') format('woff2'),
+    url('https://basecamp.transperfect.com/fonts/GothamLight.woff') format('woff'),
+    url('https://basecamp.transperfect.com/fonts/GothamLight.ttf') format('truetype'),
+    url('https://basecamp.transperfect.com/fonts/GothamLight.svg#GothamLight') format('svg');
+}@font-face {
+    font-family: 'GothamMedium';
+    src: url('https://basecamp.transperfect.com/fonts/GothamMedium.eot');
+    src: url('https://basecamp.transperfect.com/fonts/GothamMedium.eot') format('embedded-opentype'),
+    url('https://basecamp.transperfect.com/fonts/GothamMedium.woff2') format('woff2'),
+    url('https://basecamp.transperfect.com/fonts/GothamMedium.woff') format('woff'),
+    url('https://basecamp.transperfect.com/fonts/GothamMedium.ttf') format('truetype'),
+    url('https://basecamp.transperfect.com/fonts/GothamMedium.svg#GothamMedium') format('svg');
+}
+@font-face {
+    font-family: 'GothamBold';
+    src: url('https://basecamp.transperfect.com/fonts/GothamBold.eot');
+    src: url('https://basecamp.transperfect.com/fonts/GothamBold.eot') format('embedded-opentype'),
+    url('https://basecamp.transperfect.com/fonts/GothamBold.woff2') format('woff2'),
+    url('https://basecamp.transperfect.com/fonts/GothamBold.woff') format('woff'),
+    url('https://basecamp.transperfect.com/fonts/GothamBold.ttf') format('truetype'),
+    url('https://basecamp.transperfect.com/fonts/GothamBold.svg#GothamBold') format('svg');
+}
+@font-face {
+    font-family: 'GothamBookIta';
+    src: url('https://basecamp.transperfect.com/fonts/GothamBookIta.eot');
+    src: url('https://basecamp.transperfect.com/fonts/GothamBookIta.eot') format('embedded-opentype'),
+    url('https://basecamp.transperfect.com/fonts/GothamBookIta.woff2') format('woff2'),
+    url('https://basecamp.transperfect.com/fonts/GothamBookIta.woff') format('woff'),
+    url('https://basecamp.transperfect.com/fonts/GothamBookIta.ttf') format('truetype'),
+    url('https://basecamp.transperfect.com/fonts/GothamBookIta.svg#GothamBookIta') format('svg');
+}
+#sideDash .loaderOverlay .loader{
+    font-size: 17px;
+    text-transform: capitalize;
+    font-family: 'Gotham', sans-serif;
+}
+#filterBtn > span{
+    font-size: 20px;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 200;
+}
+#filterBtn #filterBadge{
+    background-color: #6aaeda;
+    border-radius: 100%;
+    color: white;
+    padding: 0px;
+    font-size: 9px;
+    font-family: sans-serif;
+}
+#pac-input {
+    font-size: 16px;
+}
+ 
+.locationItem .locTitle {
+    color: #121d29;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Gotham', sans-serif;
+    display: block;
+}
+.locationItem span:not(:first-child){
+    color: #121D29;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+#filterModal {
+    background-color: rgb(255, 255, 255) !important;
+}
+#filterModalHeader > h2{
+    font-weight: 300;
+    color: #3f4650;
+    font-family: 'Gotham', sans-serif;
+    font-size: 30px;
+    margin-top: -5px;
+    border-bottom: none !important;
+}
+#removeFiltersBtn{
+    background: white;
+    border: none;
+    color: #366ca9;
+    border-radius: 20px;
+    padding: 3px 9px;
+    font-weight: 700;
+    font-size: 14px;
+}
+#removeFiltersBtn:hover{
+    color: #20378a;
+}
+.SumoSelect > .CaptionCont{
+
+}
+.SumoSelect > .CaptionCont > span {
+    font-size: 18px !important;
+    font-family: 'Gotham', sans-serif !important;
+}
+.SumoSelect > .optWrapper > .options li label {
+    margin-bottom: -1px;
+    font-weight: 600;
+}
+.SumoSelect > .CaptionCont > span.placeholder {
+    color: #000;
+    font-style: normal;
+}
+.SumoSelect > .optWrapper.multiple > .options li.opt.selected span i,
+.SumoSelect .select-all.selected > span i,
+.SumoSelect .select-all.partial > span i {
+    background-color: rgb(255, 120, 13) !important;
+}
+.SumoSelect > .optWrapper.multiple > .MultiControls > p.btnOk {
+    border-right: 1px solid #DBDBDB;
+    border-radius: 0 0 0 3px;
+    background-color: #1a2a5b;
+    color: white;
+    font-weight: 600;
+}
+.SumoSelect > .optWrapper.multiple > .MultiControls > p.btnOk:active {
+    border-right: 1px solid #DBDBDB;
+    border-radius: 0 0 0 3px;
+    background-color: #112040;
+    /*color: #ff9900;*/
+    font-weight: 600;
+}
+.SumoSelect:hover > .CaptionCont{
+    background-color:#f7f7f7;
+}
+.selectContain:hover{
+
+    background-color:#f7f7f7;
+
+}
+.filterLabel{
+
+    font-size: 17px !important;
+    font-weight: 400;
+    font-family: 'Gotham', sans-serif
+}
+#filterSubmit {
+    background: #1a2a5b;
+    font-family: 'Gotham', sans-serif;
+    color: white;
+    border: 0px;
+    border-radius: 20px;
+    padding: 11px 20px;
+
+}
+.items button {
+
+}
+.items button.hoverActive {
+
+}
+.items button.hoverActiveStrong{
+
+}
+.items button.active {
+
+}
+/*map content styles*/
+#bg_map .heading {
+    font-weight: 500;
+}
+#loc_title{
+    border: none;
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: 500;
+    font-family: 'Gotham', sans-serif;
+    color: #144780;
+    text-transform: uppercase;
+}
+/** Website template styles override **/
+
+/** Website template styles override - END **/
