@@ -774,8 +774,6 @@ function initData(tptmap) {
 
     gettingLocations.done(function (data) {
         /* check if data needs to be converted from XML to JSON */
-        
-        
         let json;
         if (isXML) {
             json = xmlToJson(data).webform_submissions.webform_submission;
